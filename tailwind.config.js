@@ -9,6 +9,10 @@ module.exports = {
     },
     extend: {
       keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         slideUp: {
           "0%": {
             opacity: "0",
@@ -24,6 +28,7 @@ module.exports = {
       },
       animation: {
         slideUp: "slideUp 1.75s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        fadeIn: "fadeIn 1.5s ease-out forwards",
       },
 
       fontFamily: {
